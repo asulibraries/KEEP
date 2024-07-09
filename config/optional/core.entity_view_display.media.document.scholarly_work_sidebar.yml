@@ -9,6 +9,7 @@ dependencies:
     - media.type.document
   module:
     - file
+    - file_download_link
 id: media.document.scholarly_work_sidebar
 targetEntityType: media
 bundle: document
@@ -22,10 +23,14 @@ content:
     weight: 2
     region: content
   field_media_document:
-    type: file_default
+    type: file_download_link
     label: visually_hidden
     settings:
-      use_description_as_link_text: true
+      link_text: '[media:name]'
+      link_title: '[file:name]'
+      new_tab: true
+      force_download: false
+      custom_classes: ''
     third_party_settings: {  }
     weight: 1
     region: content

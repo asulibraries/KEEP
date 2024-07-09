@@ -1,4 +1,3 @@
-uuid: 4e2b7283-04db-424c-ad9c-7b229a80e58a
 langcode: en
 status: true
 dependencies:
@@ -10,9 +9,7 @@ dependencies:
     - media.type.image
   module:
     - file
-    - image
-_core:
-  default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
+    - file_download_link
 id: media.image.scholarly_work_sidebar
 targetEntityType: media
 bundle: image
@@ -26,10 +23,14 @@ content:
     weight: 2
     region: content
   field_media_image:
-    type: image_url
+    type: file_download_link
     label: visually_hidden
     settings:
-      image_style: ''
+      link_text: '[media:name]'
+      link_title: '[file:name]'
+      new_tab: true
+      force_download: false
+      custom_classes: ''
     third_party_settings: {  }
     weight: 1
     region: content

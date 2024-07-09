@@ -3,28 +3,44 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.scholarly_work_sidebar
+    - field.field.media.video.field_file_size
     - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_mime_type
     - media.type.video
   module:
     - file
+    - file_download_link
 id: media.video.scholarly_work_sidebar
 targetEntityType: media
 bundle: video
 mode: scholarly_work_sidebar
 content:
+  field_file_size:
+    type: file_size
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_media_video_file:
-    type: file_video
+    type: file_download_link
     label: visually_hidden
     settings:
-      controls: true
-      autoplay: false
-      loop: false
-      multiple_file_display_type: tags
-      muted: false
-      width: 640
-      height: 480
+      link_text: '[media:name]'
+      link_title: '[file:name]'
+      new_tab: true
+      force_download: false
+      custom_classes: ''
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_mime_type:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   created: true

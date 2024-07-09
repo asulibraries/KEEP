@@ -1,3 +1,4 @@
+uuid: 4bdfb600-c0c2-4918-9838-5ef27470d029
 langcode: en
 status: true
 dependencies:
@@ -7,6 +8,8 @@ dependencies:
     - media.type.remote_video
   module:
     - media
+_core:
+  default_config_hash: ghnr18oXjcYXHiD7QVStmdFXBprZWHS9XdP-FHZNxlw
 id: media.remote_video.scholarly_work_sidebar
 targetEntityType: media
 bundle: remote_video
