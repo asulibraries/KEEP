@@ -1,0 +1,11 @@
+name: 'KEEP'
+type: module
+description: 'Code specific to KEEP'
+package: 'custom'
+core_version_requirement: ^10
+dependencies:
+  - drupal:node
+  - drupal:media
+  - drupal:file
+  - token:token
+  - file_download_link:file_download_link

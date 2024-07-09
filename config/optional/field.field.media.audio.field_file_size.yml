@@ -1,0 +1,23 @@
+uuid: c6355dd7-807b-4bab-90be-7886c5e84b51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file_size
+    - media.type.audio
+id: media.audio.field_file_size
+field_name: field_file_size
+entity_type: media
+bundle: audio
+label: 'File size'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,7 @@
+fontawesome-kit:
+  js:
+    https://kit.fontawesome.com/93e98468c5.js: { type: external }
+scholarly-work-sidebar:
+  css:
+    component:
+      css/scholarly-work-sidebar.css: {}

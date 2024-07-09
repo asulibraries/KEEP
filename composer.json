@@ -1,0 +1,13 @@
+{
+    "name": "asulibraries/keep",
+    "type": "drupal-module",
+    "description": "Code specifically for KEEP.",
+    "package": {
+        "name": "asulibraries/keep",
+        "type": "drupal-module"
+    },
+    "require": {
+        "drupal/token": "^1",
+        "drupal/file_download_link": "^2"
+    }
+}
