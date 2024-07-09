@@ -7,6 +7,20 @@ various custom modules in our [repositories Drupal instance repo](https://github
 Those customizations will slowly migrate to this repository over time,
 but new KEEP-specific customizations will be added here.
 
+To include this repo, add it to your composer's repositories and require sections:
+
+```json
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/asulibraries/keep.git"
+        }
+    },
+    "require": {
+        "asulibraries/asu_item_analytics": "dev-main"
+    }
+```
+
 ## Scholarly Content
 
 This module adds a sidebar, [`scholarly_work_sidebar`](src/Plugin/Block/ScholarlyWorkSidebar.php), for listing the work-products of scholarly content.
