@@ -7,7 +7,7 @@ various custom modules in our [repositories Drupal instance repo](https://github
 Those customizations will slowly migrate to this repository over time,
 but new KEEP-specific customizations will be added here.
 
-To include this repo, add it to your composer's repositories and require sections:
+To use this module, add it to your composer's repositories section and then `composer require` it:
 
 ```json
     "repositories": [
@@ -15,10 +15,10 @@ To include this repo, add it to your composer's repositories and require section
             "type": "git",
             "url": "https://github.com/asulibraries/keep.git"
         }
-    },
-    "require": {
-        "asulibraries/asu_item_analytics": "dev-main"
-    }
+    ]
+```
+```bash
+composer require asulibraries/keep:dev-main
 ```
 
 ## Scholarly Content
