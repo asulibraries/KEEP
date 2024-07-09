@@ -1,9 +1,12 @@
 /** Scholarly Work Sidebar **/
-.block-scholarly-work-sidebar .block__content ol {
+.block-scholarly-work-sidebar ol {
   padding: 0;
   list-style-type: none;
 }
-.block-scholarly-work-sidebar .block__content ol li {
+.block-scholarly-work-sidebar li {
   border: solid 1px grey;
   padding: 0.25em;
+}
+.block-scholarly-work-sidebar div.field {
+  margin: auto;
 }
