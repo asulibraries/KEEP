@@ -9,7 +9,7 @@ but new KEEP-specific customizations will be added here.
 
 ## Scholarly Content
 
-This module adds a sidebar, [`scholarly_work_sidebar`](src/Plugin/Block/ScholarlyWorksSidebar.php), for listing the work-products of scholarly content.
+This module adds a sidebar, [`scholarly_work_sidebar`](src/Plugin/Block/ScholarlyWorkSidebar.php), for listing the work-products of scholarly content.
 
 We've also added *just enough* config in the `config/optional` directory to
 test it on a new site. However, the way media configurations are added, the
