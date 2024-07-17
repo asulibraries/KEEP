@@ -8,6 +8,7 @@
     },
     "require": {
         "drupal/token": "^1",
-        "drupal/file_download_link": "^2"
+        "drupal/file_download_link": "^2",
+        "drupal/media_pdf_thumbnail": "^6"
     }
 }

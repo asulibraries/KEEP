@@ -72,7 +72,7 @@ class ScholarlyWorkSidebar extends BlockBase implements ContainerFactoryPluginIn
 
     // Grabbing a thumbnail from the first item.
     $first = $work_products->first();
-    if ($thumbnail = $first->entity->get('thumbnail')) {
+    if ($thumbnail = $first?->entity?->get('thumbnail')) {
       $build['content'][] = $thumbnail->view();
     }
 
@@ -83,6 +83,7 @@ class ScholarlyWorkSidebar extends BlockBase implements ContainerFactoryPluginIn
       $cache_tags[] = "media:{$work_product->entity->id()}";
       $work_product_render_array[] = $view_builder->view($work_product->entity, 'scholarly_work_sidebar');
     }
+    if (empty($work_product_render_array)) { return [];}
     $build['content'][] = [
       '#theme' => 'item_list',
       '#attached' => ['library' => ['keep/scholarly-work-sidebar']],
