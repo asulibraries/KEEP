@@ -9,6 +9,6 @@
     "require": {
         "drupal/token": "^1",
         "drupal/file_download_link": "^2",
-        "drupal/media_thumbnails_pdf": "^1.0@beta"
+        "drupal/media_thumbnails_pdf": "^2.0@beta"
     }
 }
